@@ -180,7 +180,7 @@
     extractStatus.className = "info-message";
 
     // Use a CORS proxy to fetch the page
-    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+    const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(url)}`;
 
     const response = await fetch(proxyUrl);
     if (!response.ok) {
