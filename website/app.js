@@ -361,6 +361,7 @@
         created_at: timestamp,
         tags: [
           ["d", `${currentArticle.url}-${timestamp}`],
+          ["r", currentArticle.url],
           ["title", currentArticle.title || "Untitled"],
           ["url", currentArticle.url || ""],
           ["published_at", String(timestamp)],
